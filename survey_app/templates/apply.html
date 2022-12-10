@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">  
+    <title>Document</title>
+</head>
+<body>
+    <div id="container_two">
+        <h3>Submitted Info</h3>
+
+        <div class="result-divone">
+        <label >Your Name:</label>
+        <label> {{ username }} </label>
+        </div>
+
+        <div>
+        <label >Dojo Location:</label>
+        <label> {{ dojolocation }} </label>
+         </div>
+
+        <div class="result-divtwo">
+        <label >Favourite Language:</label>
+        <label> {{ favlang }} </label>
+        </div>
+
+        <div>
+        <label >Comment:</label>
+        <label> {{ comment }} </label>
+        </div>
+
+        <div id="button_div_two">
+            <input type="submit" value="Go Back" id="button" >
+        </div>
+
+    </div>
+    
+
+</body>
+</html>
